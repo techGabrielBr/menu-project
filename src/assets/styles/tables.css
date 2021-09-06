@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  min-height: 90vh;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgb(180, 180, 180);
+}
+
+.form {
+  float: right;
+  margin: 10px 10px;
+}
+
+.form-filter {
+  border: none;
+  border-bottom: 1px solid #000;
+  margin-left: 10px;
+  background-color: rgb(180, 180, 180);
+  outline: none;
+  font-size: 15px;
+}
+
+.table {
+  width: 100%;
+  margin: 10px auto;
+  padding: 20px;
+  border-collapse: collapse;
+}
+
+.table caption {
+  font-size: 18px;
+  border-bottom: 1px solid rgb(78, 78, 78);
+  font-weight: 600;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  text-align: start;
+}
+
+.table thead tr {
+  background-color: #ccc;
+}
+
+.table thead tr .order__collumn{
+  cursor: pointer;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid rgb(110, 110, 110);
+}
+
+.table tbody tr:hover {
+  background-color: rgb(133, 133, 133);
+}
+
+th,td {
+  padding: 10px;
+  width: 20%;
+  text-align: center;
+}

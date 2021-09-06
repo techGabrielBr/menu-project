@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="form">
+      <label for="search">Filter By Title:</label>
+    <input class="form-filter" type="text" name="search" id="search" [(ngModel)]="filter" />
+    </div>
+
+    <table class="table">
+      <caption>ALBUMS</caption>
+
+      <thead>
+        <tr>
+          <th class="order__collumn" (click)="ordenar('userId')">
+            User Id
+            <span *ngIf="key =='userId'">{{reverse ? '▲' : '▼'}}</span>
+          </th>
+          <th>Id</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let album of albums | async | filter:filter | orderBy: key : reverse ">
+          <td>{{album.userId}}</td>
+          <td>{{album.id}}</td>
+          <td>{{album.title}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
